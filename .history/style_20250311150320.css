@@ -21,8 +21,6 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     padding: 20px;
-    max-width: 1200px;
-    min-width: 380px;
     margin: 0 auto;
 }
 
@@ -59,7 +57,6 @@ h1 {
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 25px;
-    justify-content: center;
 }
 
 .book-card {
@@ -71,23 +68,6 @@ h1 {
     flex-direction: column;
     transition: var(--transition);
 }
-
-.toggle-btn.read {
-    background-color: #2ecc71; 
-  }
-  
-  .toggle-btn.read:hover {
-    background-color: #27ae60; 
-  }
-
-  .toggle-btn {
-    background-color: #fa8072
-  }
-  
-  .toggle-btn:hover {
-    background-color: #ec8181
-  }
-
 
 .book-card:hover {
     
@@ -110,11 +90,11 @@ h1 {
 }
 
 .remove-btn {
-    background-color: #929bac;
+    background-color:  #fa8072
 }
 
 .remove-btn:hover {
-    background-color: #a7b4ca;
+    background-color: #ec8181;
 }
 
 #modal-book-container {

@@ -21,8 +21,6 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     padding: 20px;
-    max-width: 1200px;
-    min-width: 380px;
     margin: 0 auto;
 }
 
@@ -59,7 +57,6 @@ h1 {
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 25px;
-    justify-content: center;
 }
 
 .book-card {
@@ -71,23 +68,6 @@ h1 {
     flex-direction: column;
     transition: var(--transition);
 }
-
-.toggle-btn.read {
-    background-color: #2ecc71; 
-  }
-  
-  .toggle-btn.read:hover {
-    background-color: #27ae60; 
-  }
-
-  .toggle-btn {
-    background-color: #fa8072
-  }
-  
-  .toggle-btn:hover {
-    background-color: #ec8181
-  }
-
 
 .book-card:hover {
     
@@ -110,66 +90,5 @@ h1 {
 }
 
 .remove-btn {
-    background-color: #929bac;
+    background-color:  #fa8072
 }
-
-.remove-btn:hover {
-    background-color: #a7b4ca;
-}
-
-#modal-book-container {
-    position:fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-#book-form {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: var(--border-radius);
-    width: 90%;
-    max-width: 500px;
-    box-shadow: var(--shadow);
-}
-
-#book-form h2 {
-    margin-bottom: 20px;
-    color:var(--primary-color);
-    text-align: center;
-}
-
-#book-form label {
-    display: block; 
-    margin-bottom: 5px;
-   font-weight: 600;
-}
-
-#book-form input[type="text"],
-#book-form input[type="number"] {
-    width: 100%;
-    padding: 10px; 
-    margin-bottom: 20px; 
-    border: 1px solid #ddd;
-    border-radius: var(--border-radius);
-    font-size: 1rem;
-}
-
-#book-form input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-#cancel-btn {
-    background-color: #7080ac;
-}
-
-#cancel-btn:hover {
-    background-color: #617099;
-}
-

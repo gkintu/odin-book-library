@@ -29,15 +29,11 @@ function displayBook() {
     card.classList.add("book-card");
     card.dataset.id = book.id;
 
-    //create toggle class to change color of button based on read or not read
-
-    const toggleButtonClass = book.read ? "btn toggle-btn read" :  "btn toggle-btn"
-
     card.innerHTML = `
     <h3>${book.title}</h3>
     <p><strong>Author:</strong> ${book.author}</p>
     <p><strong>Pages:</strong> ${book.pages}</p>
-        <button class="${toggleButtonClass}" data-id="${book.id}"> ${
+        <button class="btn toggle-btn" data-id="${book.id}"> ${
       book.read ? "Read" : "Not Read"
     }</button>
     <button class="btn remove-btn" data-id="${book.id}">Remove</button>
@@ -104,6 +100,6 @@ document.getElementById("library").addEventListener("click", (event) => {
   }
 });
 
-addBookToLibrary('The Giver', 'Lois Lowry', 180, true);
-addBookToLibrary('The Bridges of Madison County', 'Robert James Waller', 192, false);
-addBookToLibrary('A Prayer for Owen Meany', 'John Irving', 617, true);
+addBookToLibrary('The Great Gatsby', 'F. Scott Fitzgerald', 218, true);
+addBookToLibrary('1984', 'George Orwell', 328, false);
+addBookToLibrary('To Kill a Mockingbird', 'Harper Lee', 281, true);

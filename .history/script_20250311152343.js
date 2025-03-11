@@ -104,6 +104,6 @@ document.getElementById("library").addEventListener("click", (event) => {
   }
 });
 
-addBookToLibrary('The Giver', 'Lois Lowry', 180, true);
-addBookToLibrary('The Bridges of Madison County', 'Robert James Waller', 192, false);
-addBookToLibrary('A Prayer for Owen Meany', 'John Irving', 617, true);
+addBookToLibrary('The Great Gatsby', 'F. Scott Fitzgerald', 218, true);
+addBookToLibrary('1984', 'George Orwell', 328, false);
+addBookToLibrary('To Kill a Mockingbird', 'Harper Lee', 281, true);

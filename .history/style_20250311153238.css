@@ -21,8 +21,6 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     padding: 20px;
-    max-width: 1200px;
-    min-width: 380px;
     margin: 0 auto;
 }
 
@@ -114,7 +112,7 @@ h1 {
 }
 
 .remove-btn:hover {
-    background-color: #a7b4ca;
+    background-color: #8590a3;
 }
 
 #modal-book-container {
