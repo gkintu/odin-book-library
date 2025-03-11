@@ -30,7 +30,7 @@ function displayBook() {
     card.dataset.id = book.id;
 
     card.innerHTML = `
-    <h3>${book.title}</h3>
+    <h3>${book.title}<h3>
     <p><strong>Author:</strong> ${book.author}</p>
     <p><strong>Pages:</strong> ${book.pages}</p>
     <button class="btn remove-btn" data-id="${book.id}">Remove</button>
@@ -56,7 +56,6 @@ function toggleReadStatus(id) {
   const book = myLibrary.find((book) => book.id === id);
   if (book) {
     book.read = !book.read;
-    displayBook();
   }
 }
 
@@ -92,7 +91,13 @@ document.getElementById("library").addEventListener("click", (event) => {
   const id = event.target.dataset.id;
 
   if (event.target.classList.contains("toggle-btn")) {
-    toggleReadStatus(id) 
+    toggleReadStatus(id);
+
+    const book = myLibrary.find((b) => b.id === id);
+
+    if (book) {
+      event.target.textContent = book.read ? "Read" : "Not Read";
+    }
   } else if (event.target.classList.contains("remove-btn")) {
     removeBook(id);
     displayBook();

@@ -56,7 +56,6 @@ function toggleReadStatus(id) {
   const book = myLibrary.find((book) => book.id === id);
   if (book) {
     book.read = !book.read;
-    displayBook();
   }
 }
 
