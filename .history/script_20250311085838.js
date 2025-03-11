@@ -67,7 +67,7 @@ function toggleReadStatus(id) {
 // Activate form modal when new book button is clicked
 document.getElementById("new-book-btn").addEventListener('click', () => {
   document.getElementById("modal-book-container").style.display = 'flex';
-});
+})
 
 
 // Get form submission from user 
